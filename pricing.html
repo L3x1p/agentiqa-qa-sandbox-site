@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing — Acme Notes</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-build="v1-healthy">
+    <nav class="site-nav" aria-label="Primary">
+      <span class="brand">Acme Notes</span>
+      <a href="./index.html">Home</a>
+      <a href="./features.html">Features</a>
+      <a href="./pricing.html">Pricing</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <main>
+      <h1>Pricing</h1>
+      <table class="plans">
+        <thead>
+          <tr>
+            <th scope="col">Starter — $0/mo</th>
+            <th scope="col">Pro — $12/mo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>For individuals getting started.</p>
+              <button type="button" data-plan="Starter">Choose plan</button>
+              <span class="plan-choice" data-choice="Starter"></span>
+            </td>
+            <td>
+              <p>For teams that need more.</p>
+              <button type="button" data-plan="Pro">Choose plan</button>
+              <span class="plan-choice" data-choice="Pro"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script>
+      // Deterministic plan selection: clicking a button shows inline
+      // "Selected: <plan name>" next to that plan. No navigation.
+      document.querySelectorAll("button[data-plan]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var plan = btn.getAttribute("data-plan");
+          var target = document.querySelector(
+            '.plan-choice[data-choice="' + plan + '"]'
+          );
+          if (target) {
+            target.textContent = "Selected: " + plan;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
