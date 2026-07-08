@@ -154,3 +154,5 @@ form.contact-form button {
   color: #7a1c14;
   border: 1px solid #f2b8b1;
 }
+
+#send-status[role="status"] { background: #eef7ee; border: 1px solid #bfe3bf; padding: 0.6rem 0.9rem; border-radius: 6px; }

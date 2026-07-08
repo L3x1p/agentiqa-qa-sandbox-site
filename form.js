@@ -61,7 +61,7 @@ function deliverMessage(payload) {
     window.setTimeout(function () {
       submitButton.disabled = false;
 
-      if (deliverMessage(payload)) {
+      if (!deliverMessage(payload)) {
         renderSuccess(payload.email);
         form.reset();
       } else {
