@@ -155,6 +155,8 @@ form.contact-form button {
   border: 1px solid #f2b8b1;
 }
 
-.faq { margin-top: 2.5rem; }
-.faq dt { font-weight: 600; margin-top: 1rem; }
-.faq dd { margin: 0.25rem 0 0; color: #444; }
+.faq{margin-top:2.5rem}.faq dt{font-weight:600;margin-top:1rem}.faq dd{margin:.25rem 0 0;color:#444}
+
+.site-footer{margin-top:3rem;padding:1rem 0;border-top:1px solid #e2e2e2;color:#777;font-size:.85rem;text-align:center}
+
+.plan-selected{font-weight:600;color:#1a7f37}
