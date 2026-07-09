@@ -59,7 +59,7 @@ jobs:
           set +e
           npx -y agentiqa@staging run \
             --engine https://s-engine.agentiqa.com \
-            --artifacts-dir agentiqa-artifacts | tee cli-output.txt
+            --artifacts-dir agentiqa-artifacts 2>&1 | tee cli-output.txt
           echo "CLI_EXIT=${PIPESTATUS[0]}" >> "$GITHUB_ENV"
 
       - name: Post verdict comment on merge commit
