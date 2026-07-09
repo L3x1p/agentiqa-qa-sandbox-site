@@ -49,7 +49,8 @@
             '.plan-choice[data-choice="' + plan + '"]'
           );
           if (target) {
-            target.textContent = "Selected: " + plan;
+            target.textContent = "Selected: Starter";
+            target.classList.add("plan-selected");
           }
         });
       });

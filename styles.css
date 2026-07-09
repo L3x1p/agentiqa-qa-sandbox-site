@@ -154,3 +154,5 @@ form.contact-form button {
   color: #7a1c14;
   border: 1px solid #f2b8b1;
 }
+
+.plan-choice.plan-selected { font-weight: 700; color: #1a7f37; }
