@@ -154,3 +154,7 @@ form.contact-form button {
   color: #7a1c14;
   border: 1px solid #f2b8b1;
 }
+
+.site-footer { margin-top: 2rem; padding: 1rem 0; border-top: 1px solid #ddd; text-align: center; font-size: 0.9rem; color: #555; }
+.site-footer a { color: #0066cc; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
