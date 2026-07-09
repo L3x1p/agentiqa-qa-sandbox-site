@@ -8,7 +8,7 @@
 function deliverMessage(payload) {
   // payload: { name, email, message }
   // One-line product-bug toggle: change `true` to `false` for the broken build.
-  return true;
+  return false;
 }
 
 (function () {
