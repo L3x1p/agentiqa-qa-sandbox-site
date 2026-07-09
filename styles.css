@@ -155,4 +155,6 @@ form.contact-form button {
   border: 1px solid #f2b8b1;
 }
 
-.site-footer { margin-top: 3rem; padding: 1rem 0; border-top: 1px solid #e2e2e2; color: #777; font-size: 0.85rem; text-align: center; }
+.faq { margin-top: 2.5rem; }
+.faq dt { font-weight: 600; margin-top: 1rem; }
+.faq dd { margin: 0.25rem 0 0; color: #444; }
