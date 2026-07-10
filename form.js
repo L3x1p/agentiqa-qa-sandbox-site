@@ -31,7 +31,7 @@ function deliverMessage(payload) {
 
   function renderSuccess(email) {
     statusContainer.innerHTML =
-      '<div id="send-status" role="status">Thanks! We got your message and will reply to ' +
+      '<div id="send-status" role="status">Message sent — we will reply to ' +
       escapeHtml(email) +
       "</div>";
   }
